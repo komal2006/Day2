@@ -74,3 +74,6 @@ for count in countryName
 {
     print(count)
 }
+
+var countryname : Set = ["Canada", "USA", "India", "Australia"]
+print(countryname.count)
