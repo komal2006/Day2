@@ -49,4 +49,23 @@ a = a + b
 print(a)
 
 
+var twoD = [[Int]]()
 
+twoD.append([1,2,3])
+twoD.append([4,5,6])
+twoD.append([7,8,9])
+
+/*for row in twoD
+{
+ print("")
+    for item in row
+    {
+        print(item, separator: "", terminator: "")
+    }
+}*/
+
+var countryName : Set<String> = ["Canada", "USA", "India", "Australia"]
+print(countryName)
+
+countryName.insert("UK")
+print(countryName)
