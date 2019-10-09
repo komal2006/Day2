@@ -69,3 +69,8 @@ print(countryName)
 
 countryName.insert("UK")
 print(countryName)
+
+for count in countryName
+{
+    print(count)
+}
