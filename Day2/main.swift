@@ -38,5 +38,6 @@ for i in 0..<array.count
         }
     }
 }
+
 print(finalStr)
 
