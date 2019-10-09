@@ -68,17 +68,27 @@ var countryName : Set<String> = ["Canada", "USA", "India", "Australia"]
 print(countryName)
 
 countryName.insert("UK")
+countryName.insert("Russia")
+print("---------")
 print(countryName)
 
 for count in countryName
 {
+    print("---------")
     print(count)
 }
 
 var countryname : Set = ["Canada", "USA", "India", "Australia"]
+print("---------")
 print(countryname.count)
 
 for country in countryName.sorted()
 {
+    print("---------")
     print(country)
 }
+
+
+var countryName2 : Set<String> = ["China", "Russia", "Chennai"]
+print("---------")
+print(countryName.union(countryName2))
