@@ -77,3 +77,8 @@ for count in countryName
 
 var countryname : Set = ["Canada", "USA", "India", "Australia"]
 print(countryname.count)
+
+for country in countryName.sorted()
+{
+    print(country)
+}
