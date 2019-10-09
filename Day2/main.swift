@@ -69,12 +69,12 @@ print(countryName)
 
 countryName.insert("UK")
 countryName.insert("Russia")
-print("---------")
+
 print(countryName)
 
 for count in countryName
 {
-    print("---------")
+    
     print(count)
 }
 
@@ -82,9 +82,10 @@ var countryname : Set = ["Canada", "USA", "India", "Australia"]
 print("---------")
 print(countryname.count)
 
+print("---------")
 for country in countryName.sorted()
 {
-    print("---------")
+    
     print(country)
 }
 
@@ -92,3 +93,45 @@ for country in countryName.sorted()
 var countryName2 : Set<String> = ["China", "Russia", "Chennai"]
 print("---------")
 print(countryName.union(countryName2))
+
+//var dictCountry = Dictionary<Int, String>()
+//var dictCountry = [Int, String]()
+var dictCountry = [1: "USA", 2: "Canada"]
+
+//dictCountry.count // = 2
+dictCountry.updateValue("India", forKey: 4)
+//dictCountry.updateValue("UK", forKey: 4)
+dictCountry.updateValue("UK", forKey: 5)
+dictCountry.updateValue("Test", forKey: 6)
+dictCountry.removeValue(forKey: 6)
+print(dictCountry)
+
+for item in dictCountry
+{
+    print(item.key, item.value, separator: "", terminator: "\n")
+}
+
+for (k, v) in dictCountry
+{
+    print(k, v, separator: "", terminator: "\n")
+}
+
+for (_, v) in dictCountry
+{
+    print(v, separator: "", terminator: "\n")
+}
+
+for v in dictCountry
+{
+    print(v, separator: "", terminator: "\n")
+}
+
+for v in dictCountry.values
+{
+    print(v, separator: "", terminator: "\n")
+}
+
+for k in dictCountry.values
+{
+    print(k, separator: "", terminator: "\n")
+}
