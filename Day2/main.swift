@@ -8,36 +8,12 @@
 
 import Foundation
 
-print("Hello, World!")
+var a: [Int]
+a = [Int]()
+//print(a[0])  //Error
 
-let str = "aaabbccccdeeeab"
-let array = Array(str)
-var finalStr = String()
-finalStr = String(array[0])
-var count = 1;
-for i in 0..<array.count
-{
-    if(i+1) < array.count
-    {
-        if array[i] == array[i+1]
-        {
-            count = count + 1;
-        }
-        else
-        {
-            if(count != 1)
-            {
-                finalStr = "\(finalStr)\(count)\(array[i+1])"
-                count = 1;
-            }
-            else
-            {
-                finalStr = "\(finalStr)\(array[i+1])"
-                count = 1;
-            }
-        }
-    }
-}
+//a[0] = 100
+//print(a[0])
 
-print(finalStr)
-
+var b = Array.init(repeating: 0, count: 5)
+print(b[0])
