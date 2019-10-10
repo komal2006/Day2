@@ -138,6 +138,30 @@ for k in dictCountry.values
     print(k, separator: "", terminator: "\n")
 }
 */
+func demo()
+{
+    print("hello")
+}
+func demo2(a : Int , b : Int) -> Int
+{
+    return a+b
+}
+func demo3(a a1: Int , b b1: Int) -> Int
+{
+    return a1 + b1
+}
+func sum(of a1: Int , and b1: Int) -> Int
+{
+    return a1 + b1
+}
+demo()
+print(demo2(a: 10, b: 20))
+print(demo3(a: 40, b: 50))
+print(sum(of: 40, and: 60))
+
+
+
+
 
 func swap(a: inout Int, b: inout Int)
 {
