@@ -137,3 +137,18 @@ for k in dictCountry.values
 {
     print(k, separator: "", terminator: "\n")
 }
+
+
+func swap(a: inout Int, b: inout Int)
+{
+    let temp = a
+    b = a
+    a = temp
+}
+//var a, b: Int
+a = [10]
+b = [20]
+swap(&a,&b)
+print(a,b)
+
+
