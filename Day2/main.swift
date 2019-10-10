@@ -8,7 +8,7 @@
 
 import Foundation
 
-var a: [Int]
+/*var a: [Int]
 a = [Int]()
 //print(a[0])  //Error
 
@@ -137,7 +137,7 @@ for k in dictCountry.values
 {
     print(k, separator: "", terminator: "\n")
 }
-
+*/
 
 func swap(a: inout Int, b: inout Int)
 {
@@ -145,11 +145,15 @@ func swap(a: inout Int, b: inout Int)
     b = a
     a = temp
 }
-//var a, b: Int
-a = [10]
-b = [20]
-swap(&a,&b)
-print(a,b)
+var a1, b1: Int
+a1 = 10
+b1 = 20
+print("Before Swapping ")
+print("a1 : \(a1), b1 : \(b1) \n")
+
+print("After Swapping ")
+swap(&a1,&b1)
+print(a1,b1, "\n")
 
 func demo5(x: Int...)
 {
@@ -159,3 +163,12 @@ func demo5(x: Int...)
     }
 }
 demo5(x: 1, 2, 3, 4, 5)
+
+func demo5(y: String...)
+{
+    y.count
+    for n in y {
+        print(n)
+    }
+}
+demo5(y: "komal", "deep", "kaur")
