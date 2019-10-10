@@ -151,4 +151,11 @@ b = [20]
 swap(&a,&b)
 print(a,b)
 
-
+func demo5(x: Int...)
+{
+    x.count
+    for s in x {
+        print(s)
+    }
+}
+demo5(x: 1, 2, 3, 4, 5)
