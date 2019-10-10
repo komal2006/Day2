@@ -168,7 +168,7 @@ func demo5(y: String...)
 {
     y.count
     for n in y {
-        print(n)
+        print(n,"😄")
     }
 }
 demo5(y: "komal", "deep", "kaur")
