@@ -113,11 +113,13 @@ for item in dictCountry
 
 for (k, v) in dictCountry
 {
+    
     print(k, v, separator: "", terminator: "\n")
 }
 
 for (_, v) in dictCountry
 {
+    
     print(v, separator: "", terminator: "\n")
 }
 
